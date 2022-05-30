@@ -1,0 +1,89 @@
+/* RESET */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* IMPORT FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* GENERAL */
+
+body
+{
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1
+{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 20px;
+    color: hsl(218, 44%, 22%);
+}
+
+p
+{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(220, 15%, 55%);
+}
+
+#container-qr
+{
+    background-color: hsl(0, 0%, 100%);
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 20px 50px 20px;
+    text-align: center;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#qr-code
+{
+    width: 300px;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+/* RESPONSIVE */
+
+@media all and (max-width: 400px)
+{
+    #container-qr
+    {
+        background-color: hsl(0, 0%, 100%);
+        width: 315px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 20px 20px 50px 20px;
+        text-align: center;
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #qr-code
+    {
+        width: 270px;
+        margin: auto;
+        margin-bottom: 25px;
+        border-radius: 15px;
+    }
+}
